@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>:Pragprog Books Online Store</title>
+  <title>Pragprog Books Online Store</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -14,8 +14,8 @@
     </div>
     <div id="columns">
       <div id="side">
+        <span><%= @time %></span>
         <ul>
-          <li><a><%= @time.to_s(:long_ordinal) %></a></li>
           <li><a href="http://www.....">Home</a></li>
           <li><a href="http://www...../faq">Questions</a></li>
           <li><a href="http://www...../news">News</a></li>
